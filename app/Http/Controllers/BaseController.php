@@ -94,7 +94,7 @@ class BaseController extends Controller
             $src = ($external) ? url('scripts/'.$src) : $src;
 
             $this->resources['scripts'][] = [
-                'type' => $script_data['type'] ?? 'text/javascript',
+                'type' => $script_data['type'] ?? 'module',
                 'src' => $src
             ];
             return $this->resources['scripts'];
